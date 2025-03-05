@@ -30,9 +30,8 @@ class OpenInConsoleAction extends AnAction {
         String res = "";
         Project project = event.getProject();
         if (project != null) {
-            ProjectView projectView = ProjectView.getInstance(project);
             VirtualFile[] selectedFiles = event.getData(CommonDataKeys.VIRTUAL_FILE_ARRAY);
-            if (selectedFiles != null && selectedFiles.length > 0) {
+            if (selectedFiles != null) {
                 for (VirtualFile file : selectedFiles) {
                     // Process each selected file
                     res = file.getPath();

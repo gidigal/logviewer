@@ -21,12 +21,6 @@
        Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
   <depends>com.intellij.modules.platform</depends>
 
-  <!-- Extension points defined by the plugin.
-       Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
-  <extensions defaultExtensionNs="com.intellij">
-
-  </extensions>
-
   <actions>
     <action id="dev.gidigal.logviewer.OpenInConsoleAction" class="dev.gidigal.logviewer.OpenInConsoleAction" text="Console">
       <add-to-group group-id="RevealGroup" anchor="last" />

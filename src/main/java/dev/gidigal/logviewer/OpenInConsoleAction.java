@@ -131,7 +131,6 @@ class OpenInConsoleAction extends AnAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
-        System.out.println("TEST !!!");
         String fileName = getSelectedFileName(e);
         Project project = e.getProject();
         if (project != null) {

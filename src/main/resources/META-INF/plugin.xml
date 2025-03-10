@@ -25,6 +25,7 @@
     <action id="dev.gidigal.logviewer.OpenInConsoleAction" class="dev.gidigal.logviewer.OpenInConsoleAction" text="Console">
       <add-to-group group-id="RevealGroup" anchor="last" />
     </action>
-
   </actions>
+
+  <idea-version since-build="211.6693" until-build="211.*"/>
 </idea-plugin>

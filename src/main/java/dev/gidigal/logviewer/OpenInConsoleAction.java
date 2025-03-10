@@ -26,11 +26,6 @@ class OpenInConsoleAction extends AnAction {
 
     private static final Logger LOG = Logger.getInstance(OpenInConsoleAction.class);
 
-    @Override
-    public @NotNull ActionUpdateThread getActionUpdateThread() {
-        return ActionUpdateThread.BGT;
-    }
-
     private String getSelectedFileName(@NotNull AnActionEvent event) {
         String res = "";
         Project project = event.getProject();

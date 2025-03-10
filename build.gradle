@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.7.3'
+}
+
+group 'dev.gidigal'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+intellij {
+    version = '2021.1.1'
+    type = 'IC' // Use 'IC' for IntelliJ IDEA Community Edition
+    plugins = [] // Add any required plugins here
+}
+
+patchPluginXml {
+    changeNotes = """
+        Initial release of the LogViewer plugin.
+    """
+}
+
+// Configure for Java 11
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}

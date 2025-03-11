@@ -8,12 +8,15 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    gradlePluginPortal()
+    maven { url 'https://www.jetbrains.com/intellij-repository/releases' }
+    maven { url 'https://cache-redirector.jetbrains.com/intellij-dependencies' }
 }
 
 intellij {
-    version = '2021.1.1'
+    version = '2021.1'
     type = 'IC' // Use 'IC' for IntelliJ IDEA Community Edition
-    plugins = [] // Add any required plugins here
+    plugins = ['java'] // Add any required plugins here
 }
 
 patchPluginXml {

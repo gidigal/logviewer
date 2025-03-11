@@ -28,4 +28,6 @@
   </actions>
 
   <idea-version since-build="211.6693" until-build="211.*"/>
+
+  <depends>com.intellij.java</depends>
 </idea-plugin>
